@@ -32,7 +32,11 @@
   /* Header */
   header{border-top:3px solid var(--gold);border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);z-index:10}
   .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;max-width:1080px;margin:0 auto}
-  .brand{display:flex;align-items:center;gap:12px}
+  .nav-left{display:flex;align-items:center;gap:26px}
+  .nav a.navlink{color:var(--navy);text-decoration:none;font-weight:700;font-size:.92rem}
+  .nav a.navlink:hover{text-decoration:underline}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  a.card{color:inherit;text-decoration:none;display:block}
   .brand img{height:46px;width:46px;object-fit:contain}
   .brand b{font-size:1.08rem;color:var(--navy);letter-spacing:.2px}
   .brand span{display:block;font-size:.72rem;color:var(--gold-dk);font-weight:700;letter-spacing:.6px;text-transform:uppercase}
@@ -136,12 +140,15 @@
 
 <header>
   <div class="nav">
-    <div class="brand">
-      <img src="icon.png" alt="Quality Results LLC logo">
-      <div>
-        <b>Quality Results LLC</b>
-        <span>Paint · Flooring · Turns</span>
-      </div>
+    <div class="nav-left">
+      <a class="brand" href="/">
+        <img src="icon.png" alt="Quality Results LLC logo">
+        <div>
+          <b>Quality Results LLC</b>
+          <span>Paint · Flooring · Turns</span>
+        </div>
+      </a>
+      <a class="navlink" href="/services/">Services</a>
     </div>
     <a class="cta" href="#contact">Request a Bid</a>
   </div>
@@ -170,36 +177,36 @@
     <h2>Services</h2>
     <p class="section-lede">A single trade partner for the interior work that gets a unit rent-ready — painted, floored, cleaned, and cleared.</p>
     <div class="grid">
-      <div class="card">
+      <a class="card" href="/services/interior-painting/">
         <div class="ic">🎨</div>
         <h3>Interior Painting</h3>
         <p>Walls, trim, and ceilings — full-unit repaints and touch-up between tenants.</p>
-      </div>
-      <div class="card">
+      </a>
+      <a class="card" href="/services/flooring/">
         <div class="ic">🪵</div>
         <h3>Flooring Installation</h3>
         <p>Luxury vinyl plank and tile install, tear-out, and replacement.</p>
-      </div>
-      <div class="card">
+      </a>
+      <a class="card" href="/services/cabinet-installation/">
         <div class="ic">🗄️</div>
         <h3>Cabinet Installation</h3>
         <p>Kitchen and bath cabinet sets, hardware, and countertops set in place.</p>
-      </div>
-      <div class="card">
+      </a>
+      <a class="card" href="/services/cleaning-turnovers/">
         <div class="ic">🧽</div>
         <h3>Cleaning &amp; Turns</h3>
         <p>Full make-ready turns — deep clean and detail so the unit shows day one.</p>
-      </div>
-      <div class="card">
+      </a>
+      <a class="card" href="/services/carpentry/">
         <div class="ic">🔨</div>
         <h3>Non-Structural Carpentry</h3>
         <p>Interior demo, trim, drywall repair, and finish carpentry.</p>
-      </div>
-      <div class="card">
+      </a>
+      <a class="card" href="/services/cleanouts/">
         <div class="ic">📦</div>
         <h3>Cleanouts &amp; Junk Removal</h3>
         <p>Estate, eviction, and post-project cleanouts hauled and disposed.</p>
-      </div>
+      </a>
     </div>
   </div>
 </section>
